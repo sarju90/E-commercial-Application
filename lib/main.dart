@@ -1,3 +1,4 @@
+import 'package:ecommercial_app/Utils/routes.dart';
 import 'package:ecommercial_app/pages/home_page.dart';
 import 'package:ecommercial_app/pages/login_Page.dart';
 import 'package:flutter/material.dart';
@@ -18,8 +19,8 @@ class MyApp extends StatelessWidget {
           fontFamily: GoogleFonts.lato().fontFamily,
           primaryTextTheme: GoogleFonts.latoTextTheme()),
       routes: {
-        "/": (context) => Loginpage(),
-        "/login": (context) => Loginpage(),
+        Routes.homeRoute: (context) => Homepage(),
+        Routes.loginRoute: (context) => Loginpage(),
       },
     );
   }
